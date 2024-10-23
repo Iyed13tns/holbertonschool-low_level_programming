@@ -5,12 +5,12 @@
 /* betty style doc for function main goes there */
 int main(void)
 
-int n;
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-main(int argc, char **argv)
+        int n;
+        srand(time(0));
+        n = rand() - RAND_MAX / 2;
+        main(int argc, char **argv)
 {
-srand(time(0));
-printf("%d\n", rand());
-return (0);
+        srand(time(0));
+        printf("%d\n", rand());
+        return (0);
 }
