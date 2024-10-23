@@ -1,0 +1,15 @@
+#include <stdlib.h>i
+#include <time.h>
+/* more headers goes there */
+/* betty style doc for function main goes there */
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	main(int argc, char **argv)
+        {
+            printf("%d\n", rand());
+	return (0);
+}
