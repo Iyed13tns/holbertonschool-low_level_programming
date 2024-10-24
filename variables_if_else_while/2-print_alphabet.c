@@ -7,10 +7,15 @@
  */
 int main(void)
 {
-for(int x = 'A'; x <= 'Z'; x++)
+char x;
+
+for (x = 'a'; x <= 'z'; x++)
+	
 {
-x = tolower(x);
 putchar(x);
 }
-return 0;
+putchar('\n');
+
+return (0);
 }
+
