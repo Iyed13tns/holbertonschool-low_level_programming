@@ -5,6 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 char x;
@@ -15,10 +16,10 @@ putchar(x);
 }
 putchar('\n');
 
-for (x = 'A'; x <= 'Z'; x++)
+for(int x = 'A'; x <= 'Z'; x++)
 {
+x = tolower(x);
 putchar(x);
 }
-putchar('\n');
-
 return (0);
+}
