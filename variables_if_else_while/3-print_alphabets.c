@@ -8,13 +8,16 @@
 
 int main(void)
 {
-for (ch= ‘A’; ch<= ‘Z’; ch++)
+for (ch= ‘A’; ch<= ‘Z’; c++)
 putchar(ch);
-putchar (‘\n’ ) ;
+{
+putchar(c) ;
 
-for (ch= ‘a’; ch<= ‘z’; ch++)
-putchar(ch);
-putchar (‘\n’);
+for (c= ‘a’; ch<= ‘z’; c++)
+}
+putchar(c);
+}
+putchar('\n');
 
 return (0)
 }
