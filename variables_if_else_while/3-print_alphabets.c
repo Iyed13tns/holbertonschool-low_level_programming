@@ -8,6 +8,8 @@
 
 int main(void)
 {
+char c;
+
 for (ch= ‘A’; ch<= ‘Z’; c++)
 putchar(ch);
 {
