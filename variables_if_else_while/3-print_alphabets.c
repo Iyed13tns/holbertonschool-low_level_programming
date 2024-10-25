@@ -8,18 +8,13 @@
 
 int main(void)
 {
-char x;
+for (ch= ‘A’; ch<= ‘Z’; ch++)
+putchar(ch);
+putchar (‘\n’ ) ;
 
-for (x = 'a'; x <= 'z'; x++)
-{
-putchar(x);
-}
-putchar('\n');
+for (ch= ‘a’; ch<= ‘z’; ch++)
+putchar(ch);
+putchar (‘\n’);
 
-for(int x = 'A'; x <= 'Z'; x++)
-{
-x = tolower(x);
-putchar(x);
-}
-return (0);
+return (0)
 }
