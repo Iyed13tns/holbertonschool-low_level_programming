@@ -5,21 +5,19 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-char c;
+    char ch;
 
-for (ch= ‘A’; ch<= ‘Z’; c++)
-putchar(ch);
-{
-putchar(c) ;
+    for (ch = 'A'; ch <= 'Z'; ch++)
+        putchar(ch);
 
-for (c= ‘a’; ch<= ‘z’; c++)
-}
-putchar(c);
-}
-putchar('\n');
+    
+    for (ch = 'a'; ch <= 'z'; ch++)
+        putchar(ch);
 
-return (0)
+ i   putchar('\n'); 
+
+    return (0);
 }
+
