@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - prints the alphabet 10 times
+ * main - check the code.
+ *
+ * Return: Always 0.
  */
-void print_alphabet_x10(void)
+int main(void)
 {
-int i, c;
-for (i = 0; i < 10; i++)
-{
-for (c = 'a'; c <= 'z'; c++)
-{
-_putchar(c);
-}
-_putchar('\n');
+    int r;
 
-}
-}
-
+    r = _islower('H');
+    _putchar(r + '0');
+    r = _islower('o');
+    _putchar(r + '0');
+    r = _islower(108);
+    _putchar(r + '0');
+    _putchar('\n');
+    return (0);
+} 
