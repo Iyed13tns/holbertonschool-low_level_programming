@@ -1,8 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char c); // Function to print a character
-int _islower(int c); // int _isalpha(int c)
+int _putchar(char c);  // Déclaration de _putchar
+int _isalpha(int c);   // Déclaration de _isalpha
 
 #endif /* MAIN_H */
 
