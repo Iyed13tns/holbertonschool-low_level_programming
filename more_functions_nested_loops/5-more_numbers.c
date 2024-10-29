@@ -7,7 +7,7 @@
  */
 
 void more_numbers(void)
-{   
+{ 
 int c, b;
 
 for (c = 0; c < 10; c++)
@@ -20,7 +20,7 @@ if (b >= 10)
 _putchar('1');
 
 }
-       
+
 _putchar((b % 10) + '0');
 }
 _putchar('\n');
