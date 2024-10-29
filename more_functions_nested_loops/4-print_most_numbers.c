@@ -12,7 +12,7 @@ void print_most_numbers(void)
 
 	for (c = 48; c <= 57; c++)
 	{ 
-		if (c != 1 && c != 2 && c != 4 && c != 8) {
+		if (c != 0 && c != 9)
 			_putchar(c+'0');
 	} 
 	_putchar('\n');
