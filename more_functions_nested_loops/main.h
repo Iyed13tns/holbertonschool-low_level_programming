@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(int c);
-void print_square(int size);
+void print_triangle(int size);
 
 #endif /* MAIN_H */
