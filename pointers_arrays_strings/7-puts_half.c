@@ -4,6 +4,7 @@
  * main - Prints half of a string
  * @str: The string to print
  * Return: void
+ * Descriptions: 
  */
 
 void puts_half(char *str)
