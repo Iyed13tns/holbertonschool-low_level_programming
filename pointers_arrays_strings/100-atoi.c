@@ -8,7 +8,6 @@
 int _atoi(char *s)
 
 {
-
 int c = 0;
 unsigned int ni = 0;
 int min = 1;
@@ -31,3 +30,8 @@ if (isi == 1)
 break;
 }
 c++;
+}
+ni *= min;
+return (ni);
+
+}
