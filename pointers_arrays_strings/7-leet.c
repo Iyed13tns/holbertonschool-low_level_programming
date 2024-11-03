@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 /**
- * @n: I thought it was a doc line
- * Return: n value
+ * leet - Converts a string to leetspeak
+ * @n: The string to convert.
+ *
+ * Return: The converted string
  */
 char *leet(char *n)
 {
