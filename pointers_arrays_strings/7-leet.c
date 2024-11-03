@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * @n: input value
+ * @n: I thought it was a doc line
  * Return: n value
  */
 char *leet(char *n)
