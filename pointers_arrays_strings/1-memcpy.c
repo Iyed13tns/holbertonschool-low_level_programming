@@ -1,23 +1,22 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _memcpy - copies memory area
- * @dest: is a pointer type char
- * @src: is a pointer type char
- * @n: is a int variable
- * Return: Always 0.
+ * _memcpy - a fonction that copies memory area
+ * @dest: memory where is stored
+ * @src: memory where is copied
+ * @n: number of bytes
+ *
+ * Return: copied memory with n byted changed
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
+      int r = 0;
+      int i = n;
 
-unsigned int i;
-
-for (i = 0; i < n && src[i] != '\0'; i++)
-dest[i] = src[i];
-
-for ( ; i < n; i++)
-dest[i] = '\0';
-
-return (dest);
+      for (; r < i; r++)
+      {
+             dest[r] = src[r];
+             n--;
+      }
+      return (dest);
 }
