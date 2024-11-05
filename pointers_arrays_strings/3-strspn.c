@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strspn - Entry point
- * @s: input
- * @accept: input
+ * _strspn - Gets the length of a prefix substring
+ * @s: input string
+ * @accept: string with characters to match
  * Return: Always 0 (Success)
  */
 unsigned int _strspn(char *s, char *accept)
