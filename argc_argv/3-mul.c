@@ -7,7 +7,9 @@
  * @argv: Argument vector (array of arguments).
  * Return: 0 if successful, 1 if there are not exactly 2 arguments.
  */
+
 int main(int argc, char *argv[])
+
 {
     int num1, num2;
 
