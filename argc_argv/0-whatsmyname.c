@@ -10,4 +10,4 @@ int main(int argc, char *argv[])
     /* Print the program's name which is stored in argv[0] */
     printf("%s\n", argv[0]);
     return (0);
-
+}
