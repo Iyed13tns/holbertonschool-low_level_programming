@@ -3,7 +3,8 @@
 
 /**
  * array_iterator - prints an integer
- * @array: is the size of the array
+ * @array: ee
+ * @size: is the size of the array
  * @action: is a pointer to the function you need to use
  * Return: Nothing.
  */
