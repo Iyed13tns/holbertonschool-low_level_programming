@@ -1,25 +1,30 @@
-#include <stdio.h>
 #include "function_pointers.h"
 
 /**
- * @size: is the number of elements in the array
- * @array: A pointer to the array of integers
- * @cmp: A pointer to a function that takes an integer as input and returns an integer
- * Return: 
- */
+  * int_index - ...
+  * @array: ...
+  * @size: ...
+  * @cmp: ...
+  *
+  * Return: ...
+  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-int i;
+	int i = 0;
 
-if (array == NULL || cmp == NULL || size <= 0)
-return (-1);
+	if (size > 0)
+	{
+		if (array != NULL && cmp != NULL)
+		{
+			while (i < size)
+			{
+				if (cmp(array[i]))
+					return (i);
 
+				i++;
+			}
+		}
+	}
 
-for (i = 0; i < size; i++)
-{
-if (cmp(array[i]) != 0)
-return (i);
-}
-
-return (-1);
+	return (-1);
 }
