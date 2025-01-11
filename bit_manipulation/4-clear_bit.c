@@ -1,21 +1,19 @@
 #include "holberton.h"
+#include "2-get_bit.c"
 /**
- * clear_bit - Entry Point
- * @n: input
- * @index: index
- * Return: 0
+ * clear_bit - clears index to 0
+ * @n: integer to pass
+ * @index: index to go to
+ * Return: returns integer val
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int bits;
-
-	if (n == NULL)
+	if (index > 32)
 		return (-1);
 
-	bits = 1 << index;
+	(*n) &= ~(1 << index);
 
-	if ((bits | *n) == *n)
-		*n = *n ^ bits;
-
-	return (1);
+	if (get_bit((*n), index) == 0)
+		return (1);
+	return (-1);
 }

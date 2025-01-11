@@ -1,33 +1,25 @@
 #include "holberton.h"
 /**
- * print_binary - Entry Point
- * @n: dec input
- * Return: 0
+ * binary_to_uint - binary to uint
+ * @b: string to convert
+ * Return: unsigned int
+ *
  */
-void print_binary(unsigned long int n)
+unsigned int binary_to_uint(const char *b)
 {
-	int i = 0, count, k, temp;
+	unsigned int x = 0;
 
-	if (n == 0)
+	if (b == NULL)
+		return (0);
+	while (*b)
 	{
-		printf("0");
-		return;
-	}
-
-	temp = n;
-
-	while (temp != 0)
-	{
-		i++;
-		temp = temp >> 1;
-	}
-
-	for (count = i - 1; count >= 0; count--)
-	{
-		k = n >> count;
-		if (k & 1)
-			printf("1");
+		if (*b == '1')
+			x = (x << 1) | 1;
+		else if (*b == '0')
+			x <<= 1;
 		else
-			printf("0");
+			return (0);
+		b++;
 	}
+	return (x);
 }
